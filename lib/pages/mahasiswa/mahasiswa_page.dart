@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template_siakad/pages/mahasiswa/dashboard_page.dart';
 import 'package:flutter_template_siakad/pages/mahasiswa/schedules_page.dart';
+import 'package:flutter_template_siakad/pages/profile/profile_page.dart';
 
 import '../../common/constants/colors.dart';
 import '../../common/constants/icons.dart';
@@ -18,12 +19,7 @@ class _MahasiswaPageState extends State<MahasiswaPage> {
   final List<Widget> _pages = [
     const DashboardPage(),
     const SchedulesPage(),
-    Center(
-      child: ElevatedButton(
-        onPressed: () {},
-        child: const Text('Logout'),
-      ),
-    ),
+    const ProfilePage(role: 'Mahasiswa')
   ];
 
   void _onItemTapped(int index) {
