@@ -142,12 +142,12 @@ class _AbsensiPageState extends State<AbsensiPage> {
           const SizedBox(height: 20.0),
           Button.filled(
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ScanPage(),
-                ),
-              );
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (context) => const ScanPage(),
+              //   ),
+              // );
             },
             label: 'SCAN',
             icon: const ImageIcon(
